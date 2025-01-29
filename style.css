@@ -92,3 +92,68 @@ body {
     margin-bottom: 20px;
     color: #fff;
 }
+
+.skills-section {
+    margin: auto auto;
+    width: 80%;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #221f23;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-height: 500px;
+  }
+  
+  .skill-category h3 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+.progress-bar {
+    background-color: #eee;
+    border-radius: 20px;
+    height: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.skills{
+    padding: 60px 30px;
+    
+}
+.skills-title{
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 30px 30px;
+}
+.skills-title span{
+    color: #F8C537;
+}
+.skills-title p{
+    font-size: 1rem;
+}
