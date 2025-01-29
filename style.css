@@ -157,3 +157,37 @@ body {
 .skills-title p{
     font-size: 1rem;
 }
+.progress {
+    height: 10px;
+    background-color: var(--progress-color, #3c2fb5);
+    width: 0; /* Start with 0 for animation */
+    border-radius: 20px;
+    animation: none
+    
+}
+
+/* Keyframe Animation */
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width); /* Uses the custom property for width */
+    }
+}
+
+/* Assign Specific Widths with Custom Properties */
+.cpp {--progress-width: 80%;}
+.python {--progress-width: 70%;}
+.java {--progress-width: 60%;}
+.dsa {--progress-width: 50%;}
+.html {--progress-width: 75%; --progress-color: #a51d51; }
+.javascript {--progress-width: 70%; --progress-color: #a51d51;}
+.sql {--progress-width: 60%; --progress-color: #a51d51;}
+.api {--progress-width: 40%; --progress-color: #a51d51;}
+.git {--progress-width: 70%; --progress-color: #bb9a3e;}
+.jenkins {--progress-width: 60%; --progress-color: #bb9a3e;}
+.jira {--progress-width: 50%; --progress-color: #bb9a3e;}
+.communication {--progress-width: 80%; --progress-color: #1c5a6f;}
+.tw {--progress-width: 80%; --progress-color: #1c5a6f;}
+.productivity{--progress-width: 80%; --progress-color: #1c5a6f;}
