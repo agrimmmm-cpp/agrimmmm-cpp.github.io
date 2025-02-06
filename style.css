@@ -151,10 +151,10 @@ body {
     font-size: 2.5rem;
     padding: 30px 30px;
 }
-.skills-title span{
+.skills-title span, .project-title span{
     color: #F8C537;
 }
-.skills-title p{
+.skills-title p, .project-title p{
     font-size: 1rem;
 }
 .progress {
@@ -200,4 +200,16 @@ body {
     text-align: left;
     font-size: 2.5rem;
     padding: 30px 30px;
+}
+.project-card{
+    padding: 60px 40px;
+    background-color: #221f23;
+    width: 32%;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 5px solid #F8C537;
+}
+.project-card img{
+    width: 80%;
+    border-radius: 10px;
 }
