@@ -40,7 +40,7 @@ body {
     color: #F8C537;
 }
 
-.intro{
+.intro, .aboutme{
     display: flex;
     background-color:#171219;
     align-items: center;
@@ -48,15 +48,15 @@ body {
     padding: 60px 60px;
 }
 
-.intro-text{
+.intro-text, .aboutme-text{
     max-width: 50%;
 }
-.intro h1{
+.intro h1, .aboutme h1{
     font-size: 3rem;
     margin-bottom: 20px;
     color: #F8C537;
 }
-.intro h1 span{
+.intro h1 span .aboutme h1 span{
     color: #fff;
 }
 .intro .button{
@@ -74,10 +74,10 @@ body {
 .intro .button:hover {
     background-color: #fff;
 }
-.intro-image{
+.intro-image, .aboutme-image{
     max-width: 40%;
 }
-.intro-image img{
+.intro-image img, .aboutme-image img{
     width: 85%;
     border-radius: 100px;
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
