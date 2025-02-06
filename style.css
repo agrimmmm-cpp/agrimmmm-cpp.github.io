@@ -209,6 +209,13 @@ body {
     border-radius: 10px;
     border-bottom: 5px solid #F8C537;
 }
+.project-container{
+    padding: 30px 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .project-card img{
     width: 80%;
     border-radius: 10px;
