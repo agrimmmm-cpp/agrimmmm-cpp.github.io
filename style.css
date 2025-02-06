@@ -56,7 +56,7 @@ body {
     margin-bottom: 20px;
     color: #F8C537;
 }
-.intro h1 span .aboutme h1 span{
+.intro h1 span, .aboutme h1 span{
     color: #fff;
 }
 .intro .button{
