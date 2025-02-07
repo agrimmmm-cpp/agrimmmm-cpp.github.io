@@ -192,7 +192,7 @@ body {
 .tw {--progress-width: 80%; --progress-color: #1c5a6f;}
 .productivity{--progress-width: 80%; --progress-color: #1c5a6f;}
 
-.projects, .hobies{
+.projects, .hobies, .end{
     padding: 60px 60px;
     margin-top: 30px;
 }
@@ -249,7 +249,48 @@ body {
 }
 .education ul, .work ul {
     list-style-type: none;
-    
     border-left: 2px solid #F8C537;
     padding: 30px;
+}
+.end h1{
+    color: #171219;
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px 30px;
+    background-color: #eee;
+}
+.end p{
+    text-align: center;
+    padding: 30px 30px;
+}
+.end .button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #F8C537;
+    color: #171219;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.end .button:hover {
+    background-color: #fff;
+}
+.end .image{
+    width: 8%;
+    height: 10%;
+    object-fit: contain;
+    align-items: center;
+}
+.links{
+    align-items: center;
+    display: flex;
+    padding: 60px 60px;
+    gap: 50px;
 }
