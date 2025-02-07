@@ -151,10 +151,10 @@ body {
     font-size: 2.5rem;
     padding: 30px 30px;
 }
-.skills-title span, .project-title span{
+.skills-title span, .project-title span, .hobies-title span{
     color: #F8C537;
 }
-.skills-title p, .project-title p{
+.skills-title p, .project-title p, .hobies-title p{
     font-size: 1rem;
 }
 .progress {
@@ -220,8 +220,9 @@ body {
     width: 80%;
     border-radius: 10px;
 }
-.hobies iframe{
+.youtubeLinks{
     padding: 30px 30px;
-    margin-top: 30px;
+    gap: 10px;
+    margin-top: 20px;
     align-items: center;
 }
