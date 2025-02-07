@@ -192,11 +192,11 @@ body {
 .tw {--progress-width: 80%; --progress-color: #1c5a6f;}
 .productivity{--progress-width: 80%; --progress-color: #1c5a6f;}
 
-.projects{
+.projects, .hobies{
     padding: 60px 60px;
     margin-top: 30px;
 }
-.project-title{
+.project-title, .hobies-title{
     text-align: left;
     font-size: 2.5rem;
     padding: 30px 30px;
