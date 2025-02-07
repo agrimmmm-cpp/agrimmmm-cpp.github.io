@@ -226,3 +226,30 @@ body {
     margin-top: 20px;
     align-items: center;
 }
+.edandwork{
+    padding: 60px 60px;
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+.education, .work{
+    padding: 30px 30px;
+    text-align: left;
+}
+.education-title, .work-title{
+    font-size: 2.5rem;
+    padding: 20px;
+}
+.collegedesc, .workdesc{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.education-title span, .work-title span{
+    color: #F8C537;
+}
+.education ul, .work ul {
+    list-style-type: none;
+    
+    border-left: 2px solid #F8C537;
+    padding: 30px;
+}
