@@ -21,3 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         progressAnimationObserver.observe(bar);
     });
 });
+document.getElementById("projects-link").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});

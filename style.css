@@ -22,7 +22,11 @@ body {
     color: #fff;
     margin: 0 15px;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
+.navbar a:hover{
+    color: #F8C537;
+} 
 .navbar .button {
     padding: 10px 20px;
     border: 2px solid #F8C537;
