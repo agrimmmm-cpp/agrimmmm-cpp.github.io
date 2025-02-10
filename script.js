@@ -29,3 +29,11 @@ document.getElementById("projects-link").addEventListener("click", function (eve
         block: "start"
     });
 });
+document.getElementById("aboutme-link").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    document.getElementById("aboutme").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
