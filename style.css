@@ -209,6 +209,19 @@ body {
     border-radius: 10px;
     border-bottom: 5px solid #F8C537;
 }
+.project-card h1{
+    color: #F8C537;
+}
+.project-card a{
+    text-decoration: none;
+    color: #eee;
+    transition: background 0.3s ease;
+}
+.project-card a:hover{
+    background:#F8C537;
+    border-radius: 5px ;
+
+}
 .project-container{
     padding: 30px 30px;
     margin-top: 30px;
