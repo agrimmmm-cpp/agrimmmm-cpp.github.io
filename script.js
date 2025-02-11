@@ -45,3 +45,11 @@ document.getElementById("contact-link").addEventListener("click", function (even
         block: "start"
     });
 });
+document.getElementById("getintouch-link").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
