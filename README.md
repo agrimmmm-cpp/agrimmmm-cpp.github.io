@@ -13,7 +13,8 @@ This is my **personal portfolio website** built using **HTML, CSS, and JavaScrip
 
 
 ## Live Demo
-The Project is under development. I will update the website link after completion
+Link to the website is given below:
+[Link to the website](https://agrimmmm-cpp.github.io/)
 
 ## Technologies Used
 - **HTML** – Structure of the website  
@@ -22,4 +23,11 @@ The Project is under development. I will update the website link after completio
 - **GitHub Pages** – Hosting the website  
 
 ## License
-This project is licensed under the **MIT License**, meaning you’re free to use and modify it!
+I used the MIT License because it’s simple, permissive, and widely accepted in open-source projects. It allows anyone to use, modify, and distribute my code with minimal restrictions while protecting me from liability. This encourages collaboration and innovation without legal complexities. Plus, it ensures my work remains accessible to the community.
+
+
+
+
+
+
+
