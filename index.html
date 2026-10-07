@@ -3,261 +3,613 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Agrim Joshi | Software Engineer &amp; AI/ML Developer</title>
+    <meta name="description" content="Computer Science student at Simon Fraser University building full-stack software, AI/ML systems, and computer vision applications.">
+    <meta name="author" content="Agrim Joshi">
+    <meta name="theme-color" content="#0b0c0e" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agrim Joshi | Software Engineer &amp; AI/ML Developer">
+    <meta property="og:description" content="Computer Science student at Simon Fraser University building full-stack software, AI/ML systems, and computer vision applications.">
+    <meta property="og:image" content="assets/img/agrim-portrait.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <!-- Apply a saved theme before first paint to avoid a flash -->
+    <script>
+        document.documentElement.classList.add("js");
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+            document.documentElement.classList.add("motion");
+        }
+        try {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || savedTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", savedTheme);
+            }
+        } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Agrim Joshi",
+        "jobTitle": "Software Engineer",
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Simon Fraser University" },
+        "sameAs": [
+            "https://github.com/agrimmmm-cpp",
+            "https://www.linkedin.com/in/agrim-joshi786/"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-        <h1>Agrim Joshi<span>&reg;</span></h1>
-        </div>
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#" id="projects-link">Projects</a>
-            <a href="#" id="aboutme-link">About Me</a>
-            <a href="#" id="contact-link" class="button">Contact Me</a>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="intro">
-        <div class="intro-text">
-            <p class="text2">Hey, I am Agrim</p>
-            <h1>I develop<span> Softwares</span> tailored to user needs</h1>
-            <p class="text">I design and develop software solutions tailored for user needs, focusing on usability, performance, and scalability to ensure efficient and seamless experiences.</p>
-            <br>
-            <a href="#" id="getintouch-link" class="button">Get In Touch</a>
-        </div> 
-        <div class="intro-image">
-            <img src="images/suitPic.JPG" alt="intro page Picture">
-        </div>
-    </section>
-
-    <section class="skills">
-        <div class="skills-title">
-            <h1>My <span>Skills</span></h1>
-            <p>
-                My technical expertise includes frontend development,
-                as well as backend programming. I have experience working with relational 
-                and NoSQL databases, allowing me to develop efficient and scalable applications.
-            </p>
-        </div>
-    
-        <div class="skills-section">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                
-                <div class="skill-category">
-                    <h3>Programming and Development</h3>
-                    <div class="skill">
-                        <span>C/C++</span>
-                        <div class="progress-bar">
-                            <div class="progress cpp"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="progress-bar">
-                            <div class="progress python"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="progress-bar">
-                            <div class="progress java"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>DSA</span>
-                        <div class="progress-bar">
-                            <div class="progress dsa"></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill">
-                        <span>HTML,CSS</span>
-                        <div class="progress-bar">
-                            <div class="progress html"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="progress-bar">
-                            <div class="progress javascript"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="progress-bar">
-                            <div class="progress sql"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>REST APIs</span>
-                        <div class="progress-bar">
-                            <div class="progress api"></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill-category">
-                    <h3>Workflow and Automation</h3>
-                    <div class="skill">
-                        <span>Git/Github</span>
-                        <div class="progress-bar">
-                            <div class="progress git"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Jenkins</span>
-                        <div class="progress-bar">
-                            <div class="progress jenkins"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Jira</span>
-                        <div class="progress-bar">
-                            <div class="progress jira"></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill-category">
-                    <h3>Soft skills</h3>
-                    <div class="skill">
-                        <span>Communication</span>
-                        <div class="progress-bar">
-                            <div class="progress communication"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Team work</span>
-                        <div class="progress-bar">
-                            <div class="progress tw"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Time management</span>
-                        <div class="progress-bar">
-                            <div class="progress productivity"></div>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-
-    <section id="aboutme" class="aboutme">
-        <div class="aboutme-image">
-            <img src="images/aboutmePic.JPG" alt="AboutMe picture">
-        </div>
-        <div class="aboutme-text">
-            <h1>About me</h1>
-            <p class="text">Hey there! I'm Agrim Joshi, a Computer Science student at Simon Fraser University, passionate about technology, problem-solving, and creating impactful digital experiences. From building interactive websites to working with databases and algorithms, I love turning ideas into real, functional projects.
-                            My journey in tech started with simple coding exercises, but over time, I’ve explored various aspects of software development, web technologies, and system design. I enjoy working on full-stack applications, optimizing performance, and experimenting with new frameworks to enhance user experiences.
-                            Beyond academics, I’m always looking for ways to improve—whether it’s learning a new programming language, contributing to open-source projects, or diving into cloud computing and networking. I believe in continuous learning and love taking on challenges that push my boundaries.
-                            Feel free to check out my work and connect with me! </p>
-        </div> 
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="project-title">
-            <h1>My <span>Projects</span></h1>
-            <p>Here are some of the projects I've worked on, showcasing my skills in web development, networking, and AI. 
-                Each project reflects my passion for building efficient, user-friendly solutions. Click on a project to explore more details and view the code.</p>
-        </div>
-        <div class="project-container">
-            <div class="project-card">
-            <a href="https://github.com/sfu-cmpt419/2025_1_project_16" target="_blank">
-              <img src="images/project_image1.jpg" alt="">
-              <h1>Trauma Thompson</h1>
-              <p>This project focuses on developing AI models for action recognition, action anticipation and procedure recognition using large-scale video datasets. 
-                The goal is to improve medical predictions and operations using Artificial Intelligence.</p>
+    <!-- ============ NAVIGATION ============ -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <span class="scroll-progress" aria-hidden="true"></span>
+            <a class="nav__brand" href="#home">
+                <span class="nav__mark" aria-hidden="true">aj</span>
+                <span class="nav__name">Agrim Joshi</span>
             </a>
+
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav__toggle-bars" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav__actions">
+                    <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+                        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+                    </button>
+                    <a class="btn btn--primary btn--sm" href="assets/resume/Agrim_Joshi_Resume.pdf" target="_blank" rel="noopener">Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span></a>
+                </div>
             </div>
-            <div class="project-card">
-            <a href="https://github.com/CMPT-276-SPRING-2025/final-project-14-clouds" target="_blank">
-              <img src="images/project_image1.jpg" alt="">
-              <h1>Financial Advisor App</h1>
-              <p>This web-based personal financial advisor helps users track income, expenses, and financial goals while improving financial literacy through interactive tools. 
-                It integrates APIs to provide budgeting and educational insights for diverse user groups.</p>
-            </a>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Computing Science @ Simon Fraser University</p>
+                    <h1 class="hero__title" id="hero-title"><span class="word"><span style="--w: 0">Agrim</span></span> <span class="word"><span style="--w: 1">Joshi</span></span></h1>
+                    <p class="hero__role">Software Engineer <span class="hero__sep" aria-hidden="true">/</span> AI&nbsp;&amp;&nbsp;ML <span class="hero__sep" aria-hidden="true">/</span> Computer&nbsp;Vision</p>
+                    <p class="hero__lede">I build intelligent software that turns AI models into real products&nbsp;— the vision pipeline, the API and database behind it, and the app people actually use.</p>
+
+                    <div class="hero__ctas">
+                        <a class="btn btn--primary" href="#projects">View Projects</a>
+                        <a class="btn btn--ghost" href="#resume">View Resume</a>
+                        <a class="btn btn--ghost" href="#contact">Contact Me</a>
+                    </div>
+
+                    <ul class="hero__social" aria-label="Profiles">
+                        <li>
+                            <a href="https://github.com/agrimmmm-cpp" target="_blank" rel="noopener">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/agrim-joshi786/" target="_blank" rel="noopener">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Decorative pose-estimation viewport (illustration, not real data) -->
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="cv-panel">
+                        <div class="cv-panel__bar">
+                            <span class="cv-panel__dots"><i></i><i></i><i></i></span>
+                            <span class="mono">pose_pipeline</span>
+                            <span class="mono cv-panel__live">tracking</span>
+                        </div>
+                        <div class="cv-panel__view">
+                            <span class="cv-panel__scan"></span>
+                            <svg class="pose" viewBox="40 0 260 264">
+                                <defs>
+                                    <pattern id="pose-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M20 0H0V20" fill="none" class="pose__grid"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="320" height="280" fill="url(#pose-grid)"/>
+                                <rect class="pose__bbox" rx="3"/>
+                                <text class="pose__bbox-label">person</text>
+                                <g class="pose__bones"></g>
+                                <path class="pose__arc"/>
+                                <g class="pose__joints"></g>
+                            </svg>
+                        </div>
+                        <dl class="cv-panel__readout">
+                            <div><dt>knee angle</dt><dd class="mono" data-readout="angle">—</dd></div>
+                            <div><dt>reps</dt><dd class="mono" data-readout="reps">0</dd></div>
+                            <div><dt>landmarks</dt><dd class="mono">33/frame</dd></div>
+                        </dl>
+                    </div>
+                    <p class="cv-panel__caption mono">frames → landmarks → joint angles → metrics</p>
+                </div>
             </div>
-            <div class="project-card">
-            <a href="https://github.com/agrimmmm-cpp/agrimmmm-cpp.github.io" target="_blank">
-              <img src="images/project_image1.jpg" alt="">
-              <h1>Personal portfolio</h1>
-              <p>This is my personal portfolio website built with HTML, CSS, and JavaScript, showcasing my projects, skills, and experiences. It features a clean UI, smooth animations, 
-                GitHub integration, and is managed using version control and GitHub Pages for deployment.</p>
-            </a>
+
+            <!-- Proof strip: real numbers from the work below -->
+            <div class="container">
+                <ul class="proof" aria-label="Highlights">
+                    <li class="proof__item">
+                        <span class="proof__value">Top&nbsp;3</span>
+                        <span class="proof__label">StormHacks, out of 250+ teams</span>
+                    </li>
+                    <li class="proof__item">
+                        <span class="proof__value"><span data-count="75">75</span>%</span>
+                        <span class="proof__label">faster repeat requests with Redis</span>
+                    </li>
+                    <li class="proof__item">
+                        <span class="proof__value">+<span data-count="35">35</span>%</span>
+                        <span class="proof__label">accuracy over zero-shot (CLIP/ViLT)</span>
+                    </li>
+                    <li class="proof__item">
+                        <span class="proof__value"><span data-count="181">181</span></span>
+                        <span class="proof__label">courses modelled for SFU Beedie</span>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section class="edandwork">
-        <div class="education">
-            <div class="education-title">
-            <h1>My <span>Education</span></h1>
-            <div class="collegedesc">
-            <ul>
-                <li>
-                    <span class="college-title">Simon Fraser University</span> <br>Bachelor of Science in Computing Science  
-                    <br><br><span class="college-date">Expected May 2026</span>  
-                    <br><br>Relevant Courses: Data Structures & Algorithms, Networking, Database, Artificial Intelligence
-                </li>
-                
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-head__index mono">01 / About</p>
+                    <h2 id="about-title">I like the part where a model becomes a product.</h2>
+                </header>
+
+                <div class="about">
+                    <picture class="about__photo reveal">
+                        
+                        <img src="assets/img/suitPic.JPG" alt="Portrait of Agrim Joshi outdoors" width="640" height="854" loading="lazy" decoding="async">
+                    </picture>
+
+                    <div class="about__text reveal">
+                        <p>I'm a Computing Science student at Simon Fraser University, focused on software engineering and applied machine learning&nbsp;— computer vision in particular.</p>
+                        <p>Most of what I build sits where those two meet. A pose-estimation model is interesting on its own. A mobile app that takes an athlete's footage, turns 33 landmarks per frame into coaching metrics, and responds quickly because the backend is designed well&nbsp;— that's <em>useful</em>. The API, the data model, the caching and the client are the parts I enjoy most.</p>
+                        <p>Right now I'm a part-time software developer at SFU Beedie, building the degree-planning platform students use to map out their semesters.</p>
+                    </div>
+
+                    <div class="stack reveal">
+                        <p class="stack__title mono">What I build, end to end</p>
+                        <ol class="stack__layers">
+                            <li><span class="stack__layer">Client</span><span class="stack__tools">React · React Native</span></li>
+                            <li><span class="stack__layer">APIs</span><span class="stack__tools">FastAPI · Flask · Node.js · PHP · JWT</span></li>
+                            <li><span class="stack__layer">Data</span><span class="stack__tools">PostgreSQL · Redis · MongoDB</span></li>
+                            <li class="is-accent"><span class="stack__layer">AI / CV</span><span class="stack__tools">PyTorch · YOLOv8 · MMPose · MediaPipe · OpenCV</span></li>
+                            <li><span class="stack__layer">Infra</span><span class="stack__tools">Docker · GitHub Actions · Linux</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-head__index mono">02 / Experience</p>
+                    <h2 id="experience-title">Where I've shipped</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__meta">
+                            <p class="timeline__date mono">Jan 2026 — Present</p>
+                            <p class="timeline__place">Burnaby, BC</p>
+                        </div>
+                        <article class="timeline__body">
+                            <h3>Special Projects Coordinator — Software Developer</h3>
+                            <p class="timeline__org">SFU Beedie School of Business</p>
+                            <ul class="tags" aria-label="Engagement">
+                                <li>Co-op · Jan–Apr 2026</li>
+                                <li class="is-accent">Contractor, part-time · Sept 2026 – Present</li>
+                            </ul>
+                            <ul class="bullets">
+                                <li>Built a <strong>full-stack degree-planning web application</strong> that helps Beedie students choose courses, check degree requirements, and plan future semesters.</li>
+                                <li>Developed the frontend and backend in <strong>PHP</strong> and designed the <strong>PostgreSQL</strong> data model behind <strong>181 courses</strong>, degree rules, concentrations, prerequisites, and student selections.</li>
+                                <li>Built <strong>REST APIs</strong> that connect the planner with other systems and support integrations.</li>
+                                <li>Created tools that summarise expected course demand, helping administrators plan upcoming semesters.</li>
+                            </ul>
+                            <ul class="chips" aria-label="Technologies">
+                                <li>PHP</li><li>PostgreSQL</li><li>REST APIs</li><li>Data modelling</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__meta">
+                            <p class="timeline__date mono">Sept 2025 — Dec 2025</p>
+                            <p class="timeline__place">Vancouver, BC</p>
+                        </div>
+                        <article class="timeline__body">
+                            <h3>Programming Instructor</h3>
+                            <p class="timeline__org">Wize Computing Academy</p>
+                            <ul class="bullets">
+                                <li>Designed and taught interactive lessons on <strong>Python fundamentals</strong>, algorithms, debugging, and problem-solving.</li>
+                                <li>Introduced students to <strong>3D modelling</strong> tools and how they apply to engineering and design work.</li>
+                            </ul>
+                            <ul class="chips" aria-label="Topics">
+                                <li>Python</li><li>Algorithms</li><li>3D modelling</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-head__index mono">03 / Projects</p>
+                    <h2 id="projects-title">Selected work</h2>
+                    <p class="section-head__sub">Three systems where the model was only one part of the job.</p>
+                </header>
+
+                <!-- Featured: ShadowAthlete -->
+                <article class="case case--flagship reveal" aria-labelledby="sa-title">
+                    <header class="case__head">
+                        <p class="case__kicker mono"><span class="case__num">01</span>Flagship project · Oct 2026</p>
+                        <h3 class="case__title" id="sa-title">ShadowAthlete</h3>
+                        <p class="case__subtitle">Personalized AI-powered sports analytics &amp; training platform</p>
+                    </header>
+
+                    <dl class="metrics">
+                        <div><dt>Video processing</dt><dd><span class="mono">30s</span> clip in <span class="mono">~10s</span></dd></div>
+                        <div><dt>Pose landmarks</dt><dd><span class="mono">33</span> per frame</dd></div>
+                        <div><dt>Repeat requests</dt><dd><span class="mono">~75%</span> faster</dd></div>
+                        <div><dt>Backend</dt><dd><span class="mono">15+</span> REST modules</dd></div>
+                    </dl>
+
+                    <div class="case__grid">
+                        <div class="case__story">
+                            <div class="case__block">
+                                <h4>Problem</h4>
+                                <p>Most athletes don't have a coach watching every rep. Phone footage is everywhere, but turning it into feedback that tracks improvement over time is hard.</p>
+                            </div>
+                            <div class="case__block">
+                                <h4>What I built</h4>
+                                <p>A full-stack platform that analyses athlete video across <strong>4 sports</strong> and generates a digital avatar that evolves as the athlete improves.</p>
+                            </div>
+                            <div class="case__block">
+                                <h4>Technical highlights</h4>
+                                <ul class="bullets">
+                                    <li>Computer-vision pipeline built on <strong>YOLOv8, MMPose, OpenCV and PyTorch</strong> that extracts <strong>33 body landmarks per frame</strong> and converts them into performance metrics.</li>
+                                    <li><strong>FastAPI</strong> backend with <strong>15+ REST modules</strong> on PostgreSQL, secured with <strong>JWT</strong> and validated end-to-end in Postman.</li>
+                                    <li><strong>Redis</strong> caching cut response times on repeated requests by ~75%.</li>
+                                    <li>Backend services containerised with <strong>Docker</strong>, consumed by a <strong>React Native</strong> client; developed collaboratively on GitHub.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <figure class="arch">
+                            <figcaption class="arch__cap mono">System architecture</figcaption>
+                            <div class="arch__flow">
+                                <div class="arch__node">
+                                    <span class="arch__label mono">client</span>
+                                    <strong>React Native app</strong>
+                                    <span class="arch__note">record &amp; upload clips, view avatar</span>
+                                </div>
+                                <div class="arch__edge"><span class="mono">REST · JWT</span></div>
+                                <div class="arch__node arch__node--core">
+                                    <span class="arch__label mono">api</span>
+                                    <strong>FastAPI</strong>
+                                    <span class="arch__note">15+ modules · Dockerised</span>
+                                </div>
+                                <div class="arch__edge arch__edge--fan" aria-hidden="true"></div>
+                                <div class="arch__row">
+                                    <div class="arch__node">
+                                        <span class="arch__label mono">store</span>
+                                        <strong>PostgreSQL</strong>
+                                        <span class="arch__note">persistent app data</span>
+                                    </div>
+                                    <div class="arch__node">
+                                        <span class="arch__label mono">cache</span>
+                                        <strong>Redis</strong>
+                                        <span class="arch__note">repeat requests</span>
+                                    </div>
+                                    <div class="arch__node arch__node--accent">
+                                        <span class="arch__label mono">vision</span>
+                                        <strong>CV pipeline</strong>
+                                        <span class="arch__note">YOLOv8 · MMPose · OpenCV · PyTorch</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <footer class="case__foot">
+                        <ul class="chips" aria-label="Technologies">
+                            <li>Python</li><li>FastAPI</li><li>React Native</li><li>PostgreSQL</li><li>Redis</li><li>MMPose</li><li>YOLOv8</li><li>OpenCV</li><li>PyTorch</li><li>REST APIs</li><li>JWT</li><li>Postman</li><li>Docker</li>
+                        </ul>
+                        <a class="link-arrow" href="https://github.com/KR13H/InnovaX" target="_blank" rel="noopener">Source on GitHub</a>
+                    </footer>
+                </article>
+
+                <!-- Featured: Re-Habit -->
+                <article class="case case--split reveal" aria-labelledby="rh-title">
+                    <div class="case__main">
+                        <p class="case__kicker mono"><span class="case__num">02</span>Hackathon · Oct 2025</p>
+                        <h3 class="case__title" id="rh-title">Re-Habit</h3>
+                        <p class="case__subtitle">AI motion-tracking web app for physiotherapy</p>
+
+                        <p class="award">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg>
+                            <span><strong>Top 3 at StormHacks</strong> out of 250+ teams and 1,000+ students</span>
+                        </p>
+
+                        <p>Stroke-recovery exercises mostly happen at home, without a physiotherapist checking form. Re-Habit uses an ordinary camera to track a patient's movement in real time and guide them through each exercise.</p>
+                        <ul class="bullets">
+                            <li>Tracks joints with <strong>MediaPipe</strong> and <strong>OpenCV</strong> to count repetitions and detect incorrect movements, tuned to reduce false counts.</li>
+                            <li>Dashboard measures <strong>movement symmetry, posture, and walking patterns</strong> and turns them into simple progress summaries.</li>
+                        </ul>
+                        <ul class="chips" aria-label="Technologies">
+                            <li>Python</li><li>Flask</li><li>MediaPipe</li><li>OpenCV</li><li>Pose estimation</li>
+                        </ul>
+                        <a class="link-arrow" href="https://www.youtube.com/watch?v=3BMDNWQFCE8" target="_blank" rel="noopener">Watch the demo</a>
+                    </div>
+
+                    <figure class="pipeline">
+                        <figcaption class="mono">Camera → progress summary</figcaption>
+                        <ol>
+                            <li><span class="pipeline__step mono">01</span><strong>Camera feed</strong><span>Live frames through OpenCV</span></li>
+                            <li><span class="pipeline__step mono">02</span><strong>Joint tracking</strong><span>MediaPipe pose landmarks</span></li>
+                            <li><span class="pipeline__step mono">03</span><strong>Reps &amp; form</strong><span>Count reps, flag incorrect movement</span></li>
+                            <li><span class="pipeline__step mono">04</span><strong>Movement analysis</strong><span>Symmetry · posture · walking pattern</span></li>
+                            <li><span class="pipeline__step mono">05</span><strong>Progress summary</strong><span>Dashboard for the patient</span></li>
+                        </ol>
+                    </figure>
+                </article>
+
+                <!-- Featured: Medical VQA -->
+                <article class="case case--split case--reverse reveal" aria-labelledby="vqa-title">
+                    <div class="case__main">
+                        <p class="case__kicker mono"><span class="case__num">03</span>Machine learning · Aug 2025</p>
+                        <h3 class="case__title" id="vqa-title">Medical VQA Analysis</h3>
+                        <p class="case__subtitle">Vision-language model for clinical procedures</p>
+
+                        <p>Visual question answering on medical images depends heavily on label quality. I spent as much time on the data as on the models.</p>
+                        <ul class="bullets">
+                            <li>Built and evaluated a VQA pipeline over <strong>2,000+ image–question pairs</strong> spanning <strong>13+ clinical question categories</strong>.</li>
+                            <li>Manually reviewed images and Q&amp;A labels: <strong>corrected mislabeled samples</strong>, standardised inconsistent annotations, and flagged ambiguous cases.</li>
+                            <li>Fine-tuned <strong>CLIP</strong> and <strong>ViLT</strong> with Hugging Face Transformers, improving accuracy by <strong>~35% over zero-shot baselines</strong>.</li>
+                        </ul>
+                        <ul class="chips" aria-label="Technologies">
+                            <li>Python</li><li>PyTorch</li><li>Hugging Face Transformers</li><li>CLIP</li><li>ViLT</li><li>OpenCV</li>
+                        </ul>
+                        <a class="link-arrow" href="https://www.youtube.com/watch?v=PFHsqM_Vk1U" target="_blank" rel="noopener">Watch the walkthrough</a>
+                    </div>
+
+                    <figure class="dataflow">
+                        <figcaption class="mono">Data quality → model quality</figcaption>
+                        <div class="dataflow__stage">
+                            <span class="dataflow__label mono">dataset</span>
+                            <p><strong class="mono">2,000+</strong> image–question pairs<br><strong class="mono">13+</strong> clinical categories</p>
+                        </div>
+                        <div class="dataflow__stage dataflow__stage--work">
+                            <span class="dataflow__label mono">sanitise</span>
+                            <ul>
+                                <li><span class="dataflow__op mono">fix</span>mislabeled samples</li>
+                                <li><span class="dataflow__op mono">norm</span>inconsistent annotations</li>
+                                <li><span class="dataflow__op mono">flag</span>ambiguous cases</li>
+                            </ul>
+                        </div>
+                        <div class="dataflow__stage">
+                            <span class="dataflow__label mono">fine-tune</span>
+                            <p>CLIP · ViLT</p>
+                        </div>
+                        <div class="dataflow__result">
+                            <span class="dataflow__big mono">+<span data-count="35">35</span>%</span>
+                            <span>accuracy vs. zero-shot baselines</span>
+                        </div>
+                    </figure>
+                </article>
+
+                <!-- Secondary projects -->
+                <div class="more">
+                    <h3 class="more__title mono">More projects</h3>
+                    <div class="more__grid">
+                        <article class="mini reveal" aria-labelledby="fa-title">
+                            <p class="mini__meta mono">Full-stack · Jan 2025</p>
+                            <h4 id="fa-title">Financial Advisor Application</h4>
+                            <p>A React + Node.js web app that pulls account data from real-time financial APIs and turns it into personalised insights.</p>
+                            <ul class="bullets bullets--compact">
+                                <li>REST integrations with automated API validation and regression tests</li>
+                                <li>Request caching to cut redundant network calls</li>
+                                <li>CI/CD with GitHub Actions + Docker: <strong>~60% shorter release cycle</strong></li>
+                            </ul>
+                            <ul class="chips" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Docker</li><li>GitHub Actions</li><li>REST APIs</li></ul>
+                        </article>
+
+                        <article class="mini reveal" aria-labelledby="rl-title">
+                            <p class="mini__meta mono">Reinforcement learning · Aug 2025</p>
+                            <h4 id="rl-title">RL Stock Trading Agent</h4>
+                            <p>A Deep Q-Learning agent trained on real AAPL data in a custom trading environment with technical indicators.</p>
+                            <ul class="bullets bullets--compact">
+                                <li>P&amp;L-based reward with cooldown penalties: <strong>~15% less over-trading</strong> and transaction cost vs. baselines</li>
+                                <li>Modular testing framework for benchmarking and verifying strategies</li>
+                            </ul>
+                            <ul class="chips" aria-label="Technologies"><li>Python</li><li>Deep Q-Learning</li><li>Data analysis</li></ul>
+                            <a class="link-arrow" href="https://github.com/agrimmmm-cpp/CMPT-310-Project" target="_blank" rel="noopener">Source on GitHub</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-head__index mono">04 / Skills</p>
+                    <h2 id="skills-title">Toolkit</h2>
+                    <p class="section-head__sub">Grouped by where it sits in the stack. <span class="core-key">Highlighted</span> items power the projects above.</p>
+                </header>
+
+                <dl class="skills reveal">
+                    <div class="skills__row">
+                        <dt>Languages &amp; Databases</dt>
+                        <dd><ul>
+                            <li class="is-core">Python</li><li class="is-core">JavaScript</li><li class="is-core">PHP</li><li class="is-core">PostgreSQL</li><li>C</li><li>C++</li><li>SQL</li><li>HTML</li><li>CSS</li><li>MongoDB</li><li>R</li><li>MATLAB</li>
+                        </ul></dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt>Frameworks &amp; Libraries</dt>
+                        <dd><ul>
+                            <li class="is-core">FastAPI</li><li class="is-core">React Native</li><li class="is-core">Flask</li><li>React</li><li>Node.js</li><li>Pandas</li><li>NumPy</li>
+                        </ul></dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt>AI / ML / Computer Vision</dt>
+                        <dd><ul>
+                            <li class="is-core">PyTorch</li><li class="is-core">OpenCV</li><li class="is-core">YOLO</li><li class="is-core">MMPose</li><li class="is-core">MediaPipe</li><li>TensorFlow</li><li>Scikit-Learn</li><li>Pose estimation</li><li>Data annotation</li>
+                        </ul></dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt>Web, APIs &amp; Security</dt>
+                        <dd><ul>
+                            <li class="is-core">REST APIs</li><li class="is-core">JWT</li><li>OAuth 2.0</li><li>API authentication</li><li>CORS</li><li>WebSockets</li><li>JSON</li>
+                        </ul></dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt>Developer Tools</dt>
+                        <dd><ul>
+                            <li class="is-core">Docker</li><li class="is-core">Redis</li><li class="is-core">Postman</li><li>Git</li><li>GitHub</li><li>Linux</li><li>CLI</li><li>Neovim</li>
+                        </ul></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION + ACHIEVEMENTS ============ -->
+        <section class="section" id="education" aria-labelledby="education-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="section-head__index mono">05 / Background</p>
+                    <h2 id="education-title">Education &amp; recognition</h2>
+                </header>
+
+                <div class="background">
+                    <article class="edu reveal">
+                        <p class="edu__date mono">Expected Dec 2027</p>
+                        <h3>Simon Fraser University</h3>
+                        <p class="edu__degree">Bachelor of Applied Science, Computing Science</p>
+                        <p class="edu__place">Burnaby, BC</p>
+                    </article>
+
+                    <div class="achievements reveal">
+                        <article class="achievement">
+                            <span class="achievement__badge mono">Top 3</span>
+                            <div>
+                                <h3>StormHacks · Re-Habit</h3>
+                                <p>Top 3 out of 250+ teams and 1,000+ students.</p>
+                            </div>
+                        </article>
+                        <ul class="certs" aria-label="Certifications">
+                            <li><span>Data Analyst Certificate</span><span class="certs__src">Coursera · Oct 2024</span></li>
+                            <li><span>Data Structures &amp; Algorithms</span><span class="certs__src">ITI Informatics · Aug–Dec 2023</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ RESUME ============ -->
+        <section class="section section--alt" id="resume" aria-labelledby="resume-title">
+            <div class="container resume">
+                <div class="resume__copy reveal">
+                    <p class="section-head__index mono">06 / Resume</p>
+                    <h2 id="resume-title">The one-page version</h2>
+
+                    <dl class="resume__facts">
+                        <div><dt>Name</dt><dd>Agrim Joshi</dd></div>
+                        <div><dt>Studying</dt><dd>Computing Science @ Simon Fraser University</dd></div>
+                        <div><dt>Focus</dt><dd>Software Engineering · AI/ML · Computer Vision · Full-Stack Development</dd></div>
+                        <div><dt>Graduating</dt><dd>December 2027</dd></div>
+                    </dl>
+
+                    <div class="resume__actions">
+                        <a class="btn btn--primary" href="assets/resume/Agrim_Joshi_Resume.pdf" target="_blank" rel="noopener">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                            View Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span>
+                        </a>
+                        <a class="btn btn--ghost" href="assets/resume/Agrim_Joshi_Resume.pdf" download="Agrim_Joshi_Resume.pdf">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+                            Download Resume<span class="visually-hidden"> (PDF)</span>
+                        </a>
+                    </div>
+                    <p class="resume__note mono">PDF · 1 page · 325 KB</p>
+                </div>
+
+                <a class="resume__preview reveal" href="assets/resume/Agrim_Joshi_Resume.pdf" target="_blank" rel="noopener">
+                    <img src="assets/img/resume-preview.webp" alt="Preview of the top of Agrim Joshi's resume" width="850" height="640" loading="lazy" decoding="async">
+                    <span class="resume__preview-cta mono">Open full PDF ↗<span class="visually-hidden"> (opens in a new tab)</span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <p class="section-head__index mono">07 / Contact</p>
+                <h2 class="contact__title" id="contact-title">Let's build something.</h2>
+                <p class="contact__lede">I'm looking for software engineering and AI/ML internships. If you're working on something where a model has to hold up inside a real product, I'd like to hear about it.</p>
+
+                <div class="contact__email">
+                    <a class="contact__address" href="mailto:aja121@sfu.ca">aja121@sfu.ca</a>
+                    <button class="copy-btn mono" type="button" data-copy="aja121@sfu.ca" aria-label="Copy email address">copy</button>
+                    <span class="visually-hidden" role="status" data-copy-status></span>
+                </div>
+
+                <ul class="contact__links">
+                    <li><a class="link-arrow" href="https://www.linkedin.com/in/agrim-joshi786/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a class="link-arrow" href="https://github.com/agrimmmm-cpp" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a class="link-arrow" href="assets/resume/Agrim_Joshi_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span data-year>2026</span> Agrim Joshi</p>
+            <ul class="footer__links">
+                <li><a href="https://github.com/agrimmmm-cpp" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/agrim-joshi786/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="mailto:aja121@sfu.ca">Email</a></li>
             </ul>
         </div>
-        </div>
-        </div>
-        <div class="work">
-            <div class="work-title">
-            <h1>Work <span>Experience</span></h1>
-            <div class="workdesc">
-            <ul>
-                <li>
-                    <span class="job-title">Operations Executive</span> <br> Visa Xpert
-                    <br><br><span class="job-date">April 2022 - April 2023 </span>  
-                    <br><br>Managing client meetings and facilitating collaboration with teammates and students.
-                </li>
-                
-            </ul>
+    </footer>
 
-        </div>
-        </div>
-        </div>
-    </section>
-    <section class="hobies">
-        <div class="hobies-title">
-            <h1>My <span>Hobbies</span></h1>
-            <p>I have always had a deep passion for music, both listening to and creating it. Music has been a significant part of 
-                my life, allowing me to express emotions, tell stories, and experiment with different sounds. Whether composing, producing, '
-                or simply playing around with melodies, I find immense joy in the creative process. Each piece reflects a unique aspect of my musical 
-                journey, blending influences from various genres and personal experiences. I love experimenting with different sounds and techniques to 
-                bring something new and exciting to my audience</p>
-        </div>
-        <div class="youtubeLinks">
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/hbV__vsvVrs?si=VKa6HCIKvVqmSdAW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/4KiDKYOQJ48?si=FObur22BAHb0oXNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="33%" height="315" src="https://www.youtube.com/embed/Xbokgsep7lk?si=582f-AHRBvkyxKSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>  
-    </section>
-
-    <section id="contact" class="end">
-        <h1>Keep In <span>Touch</span></h1>
-        <p>Feel free to reach out for collaborations, project inquiries, or just to say hello! Whether you have questions, feedback, or need assistance, I’d love to connect. 
-            Drop an email or click me up on LinkedIn—let’s create something amazing together!</p>
-        <div class="links">
-        <a href="https://www.linkedin.com/in/agrim-joshi786/" target="_blank" class="button"><img src="images/LinkedIn.png" alt="LinkedIn logo"class="image" ><span> LinkedIn</span></a>
-        <a href="https://github.com/agrimmmm-cpp" target="_blank" class="button"><img src="images/Github.png" alt="Github logo" class="image"><span> Github</span></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joshiagrim1@gmail.com" target="_blank" class="button"><img src="images/Gmail.png" alt="Gmail logo" class="image"><span> Gmail</span></a>
-        <a href="docs/resume.pdf" target="_blank" class="button"><img src="images/Resume.png" alt="Resume Logo" class="image"><span> Resume</span></a>
-        </div>
-    </section>
-<script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
